@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+img {
+	width:10%;
+    float:left;
+    margin:100px 11% 0 11%;
+}
+
+img:nth-child(1) {
+    -webkit-animation: spin-clock 1.7s infinite; 
+}
+
+@-webkit-keyframes spin-clock {
+    0%   {transform:rotate(0deg);}
+    12.5%{transform:rotate(-50deg);}
+    /*25%  {transform:rotate(0deg);}*/
+    50%  {transform:rotate(180deg);}
+    62.5%{transform:rotate(130deg);}
+    /*75%  {transform:rotate(180deg);}*/
+    100% {transform:rotate(360deg);}
+}
+
+img:nth-child(2) {
+    -webkit-animation: spin-counter 1.7s infinite; 
+}
+
+@-webkit-keyframes spin-counter {
+    0%   {transform:rotate(0deg);}
+    25%  {transform:rotate(0deg);}
+    50%  {transform:rotate(-180deg);}
+    75%  {transform:rotate(-180deg);}
+    100% {transform:rotate(-360deg);}
+}
+
+img:nth-child(3) {
+    -webkit-animation: swing 1.5s infinite; 
+}
+
+@-webkit-keyframes swing {
+    0%   {transform:rotate(-80deg);transform-origin:center 24.5%;}
+    50%{transform:rotate(80deg);transform-origin:center 24.5%;}
+    100% {transform:rotate(-80deg);transform-origin:center 24.5%;}
+}
+
+img:nth-child(8) {
+    -webkit-animation: forward 1.5s infinite; 
+}
+
+@-webkit-keyframes forward {
+    0%   {transform:rotate(0deg);transform-origin:center right;}
+    100% {transform:rotate(360deg);transform-origin:center right;}
+}
+
+</style>
+</head>
+<body>
+
+<img src="loop.svg" />
+<img src="loop-alt2.svg" />
+<img src="anchor.svg" />
+<img src="forrst.svg" />
+<img src="heart-o.svg" />
+<img src="layers-alt.svg" />
+<img src="reply.svg" />
+<img src="forward.svg" />
+<img src="star-empty.svg" />
+
+</body>
+</html>
